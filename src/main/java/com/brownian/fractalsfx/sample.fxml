@@ -1,0 +1,19 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.brownian.fractalsfx.Controller" alignment="center">
+    <StackPane fx:id="fractal" prefWidth="800" prefHeight="800"
+               style=" -fx-border-color: black; -fx-border-width: 1;  -fx-border-style: solid; -fx-background-color: gray;"/>
+    <ScrollPane minHeight="100">
+        <HBox>
+            <Button onAction="#showKochCurve90" text="Koch Curve (90 deg)"/>
+            <Button onAction="#showKochCurve120" text="Koch Curve (120 deg)"/>
+            <Button onAction="#showKochCurve60" text="Koch Curve (60 deg)"/>
+            <Button onAction="#showDragonCurve" text="Dragon Curve"/>
+            <Button onAction="#showSierpinskiTriangle" text="Sierpinski Triangle"/>
+            <Button onAction="#showHilbertCurve" text="Hilbert Curve"/>
+        </HBox>
+    </ScrollPane>
+</VBox>
